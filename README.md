@@ -70,10 +70,16 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 - clone the project
 - composer install
 - create the .env file and update the database
+```
+    .env - replace the SESSION_DRIVER=cookie
+    
+    Add these values
+    SANCTUM_STATEFUL_DOMAINS=localhost:8000,localhost:8080
+    SESSION_DOMAIN=localhost
+```
 - php artisan key:generate
 - php artisan migrate
 - run php artisan db:seed --class=ProductSeeder
 - php artisan serve
-- move to the frontend
-- https://github.com/niranjana06/assignment-forum-frontend-vue2
+- clone the frontend - https://github.com/niranjana06/assignment-forum-frontend-vue2
 
