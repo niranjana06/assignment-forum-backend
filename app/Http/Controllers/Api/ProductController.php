@@ -29,7 +29,7 @@ class ProductController extends ApiController
      */
     public function index()
     {
-        $products = $this->productRepository->all();
+        $products = $this->productRepository->all()->load('postsApproved');
         return $this->respondSuccess($products);
     }
 
