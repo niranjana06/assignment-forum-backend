@@ -65,3 +65,15 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 "# assignment-forum-backend" 
+
+## Installation
+- clone the project
+- composer install
+- create the .env file and update the database
+- php artisan key:generate
+- php artisan migrate
+- run php artisan db:seed --class=ProductSeeder
+- php artisan serve
+- move to the frontend
+- https://github.com/niranjana06/assignment-forum-frontend-vue2
+
